@@ -11,13 +11,13 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<flow name="mulesoft-cicd-sampleFlow" doc:id="67fc7b43-a21b-4192-8efe-100a0568c46d" >
 		<http:listener doc:name="Listener" doc:id="2b8e9987-5c63-466f-a766-827361b7b9d5" config-ref="HTTP_Listener_config" path="cicd"/>
 		<logger level="INFO" doc:name="Logger" doc:id="7741bd53-478c-4a39-83d3-83994c99403c" message="#['Entered the CICD Flow :::::::::::::']"/>
-		<ee:transform doc:name="Transform Message" doc:id="3a7e7ada-240c-47a0-a4aa-04fbbc2b4fe8" >
+		<ee:transform doc:name="Final Response" doc:id="3a7e7ada-240c-47a0-a4aa-04fbbc2b4fe8" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
 output application/json
 ---
 {
-	"Status":"CICD Deployment is Success "
+	"Status":"CICD Deployment is Success and Mule application is deployed to Anypoint Platform "
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
