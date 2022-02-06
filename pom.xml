@@ -42,8 +42,10 @@
             <username>mailformule</username>
             <password>Amarnath@01</password>
             <applicationName>mulesoft-cicd-sample</applicationName>
+            <businessGroup>MuleSoft</businessGroup>
             <environment>Sandbox</environment>
             <workerType>MICRO</workerType>
+            <workers>1</workers>
             <objectStoreV2>true</objectStoreV2>
         </cloudHubDeployment>
     </configuration>
