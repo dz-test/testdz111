@@ -41,7 +41,7 @@
             <muleVersion>4.4.0</muleVersion>
             <username>mailformule</username>
             <password>Amarnath@01</password>
-            <applicationName>mulesoft-cicd-sample</applicationName>
+            <applicationName>mulesoft-ci-cd-sample</applicationName>
             <businessGroup>MuleSoft</businessGroup>
             <environment>Sandbox</environment>
             <workerType>MICRO</workerType>
